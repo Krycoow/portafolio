@@ -39,7 +39,18 @@ Transformar ideas creativas en soluciones web funcionales y atractivas que brind
 
 ## 🚀 Proyectos Destacados
 
-### 🎯 **Zion Marketing**
+### 🎯 **Este Portafolio Personal**
+**Mi sitio web profesional**
+- 🌐 Diseño moderno con tema negro y verde
+- 📱 Completamente responsivo
+- ✨ Animaciones CSS profesionales
+- 📧 Sistema de mensajes funcional
+- 🎨 Panel de administración incluido
+- 📄 Generador de CV automático
+
+**Tecnologías:** HTML5, CSS3, JavaScript, Git
+
+### 🏢 **Zion Marketing**
 **Agencia de Marketing Digital**
 - 🌐 [Ver Proyecto](https://github.com/Krycoow/Agencia-De-Marketing)
 - 📱 Diseño responsivo completo
@@ -113,9 +124,10 @@ portafolio/
 
 - 🎯 **19 años** de edad
 - 📚 **6+ meses** estudiando programación
-- 🛠️ **5+ tecnologías** dominadas
-- 🚀 **1 proyecto** completado
+- 🛠️ **6 tecnologías** dominadas
+- 🚀 **2 proyectos** completados (Portafolio + Zion Marketing)
 - 📱 **100% responsive** en todos los dispositivos
+- ⚡ **Sistema de mensajes** funcional incluido
 
 ---
 
