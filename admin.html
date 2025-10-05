@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Daniel Dos Santos</title>
+    <link rel="stylesheet" href="admin-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="header-content">
+                <h1><i class="fas fa-envelope"></i> Mensajes del Portafolio</h1>
+                <div class="header-actions">
+                    <button class="btn btn-primary" onclick="refreshMessages()">
+                        <i class="fas fa-sync"></i> Actualizar
+                    </button>
+                    <button class="btn btn-danger" onclick="clearAllMessages()">
+                        <i class="fas fa-trash"></i> Limpiar Todo
+                    </button>
+                    <a href="index.html" class="btn btn-secondary">
+                        <i class="fas fa-home"></i> Volver al Portafolio
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Stats -->
+        <div class="stats-section">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="stat-info">
+                    <h3 id="total-messages">0</h3>
+                    <p>Total Mensajes</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-envelope-open"></i>
+                </div>
+                <div class="stat-info">
+                    <h3 id="unread-messages">0</h3>
+                    <p>No Leídos</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-calendar"></i>
+                </div>
+                <div class="stat-info">
+                    <h3 id="today-messages">0</h3>
+                    <p>Hoy</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Messages List -->
+        <div class="messages-section">
+            <div class="section-header">
+                <h2>Mensajes Recibidos</h2>
+                <div class="filter-options">
+                    <select id="filter-select" onchange="filterMessages()">
+                        <option value="all">Todos los mensajes</option>
+                        <option value="unread">No leídos</option>
+                        <option value="read">Leídos</option>
+                        <option value="today">Hoy</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="messages-container" class="messages-container">
+                <!-- Messages will be loaded here -->
+            </div>
+
+            <div id="no-messages" class="no-messages" style="display: none;">
+                <div class="no-messages-content">
+                    <i class="fas fa-inbox"></i>
+                    <h3>No hay mensajes</h3>
+                    <p>Los mensajes enviados desde tu portafolio aparecerán aquí.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Modal -->
+    <div id="message-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-name">Nombre del Contacto</h3>
+                <button class="close-btn" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="message-info">
+                    <div class="info-item">
+                        <strong>Email:</strong>
+                        <span id="modal-email">email@ejemplo.com</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Fecha:</strong>
+                        <span id="modal-date">Fecha</span>
+                    </div>
+                </div>
+                <div class="message-content">
+                    <strong>Mensaje:</strong>
+                    <p id="modal-message">Contenido del mensaje...</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="replyToMessage()">
+                    <i class="fas fa-reply"></i> Responder
+                </button>
+                <button class="btn btn-danger" onclick="deleteMessage()">
+                    <i class="fas fa-trash"></i> Eliminar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>
