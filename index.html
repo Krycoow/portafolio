@@ -9,27 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">Portafolio</span>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Inicio</a>
-                <a href="#about" class="nav-link">Sobre mí</a>
-                <a href="#projects" class="nav-link">Proyectos</a>
-                <a href="#skills" class="nav-link">Habilidades</a>
-                <a href="#contact" class="nav-link">Contacto</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
@@ -46,10 +25,9 @@
                         que brinden una experiencia de usuario excepcional.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Contactar</a>
-                        <a href="#" class="btn btn-secondary" id="download-cv">
-                            <i class="fas fa-download"></i>
-                            Descargar CV
+                        <a href="#contact" class="btn btn-primary">
+                            <span class="btn-text">Contactar</span>
+                            <div class="btn-shine"></div>
                         </a>
                     </div>
                 </div>
@@ -230,90 +208,166 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Habilidades</h2>
-                <p class="section-subtitle">Tecnologías que domino</p>
+                <p class="section-subtitle">Herramientas y lenguajes que utilizo</p>
             </div>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-js-square"></i>
-                    </div>
-                    <h3>JavaScript</h3>
-                    <p>Lenguaje de programación fundamental para desarrollo web moderno</p>
-                    <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85%"></div>
+            
+            <!-- Tools Section -->
+            <div class="skills-category">
+                <h3 class="category-title">
+                    <i class="fas fa-tools"></i>
+                    Herramientas
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
                         </div>
-                        <span>Intermedio</span>
+                        <h3>VS Code</h3>
+                        <p>Editor de código preferido para desarrollo eficiente</p>
+                        <div class="skill-level">
+                            <span class="level-badge expert">Experto</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-mouse-pointer"></i>
+                        </div>
+                        <h3>Cursor</h3>
+                        <p>Editor de código con IA para desarrollo avanzado</p>
+                        <div class="skill-level">
+                            <span class="level-badge expert">Experto</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h3>Git</h3>
+                        <p>Control de versiones para desarrollo colaborativo</p>
+                        <div class="skill-level">
+                            <span class="level-badge intermediate">Intermedio</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <h3>Figma</h3>
+                        <p>Diseño de interfaces y prototipado</p>
+                        <div class="skill-level">
+                            <span class="level-badge intermediate">Intermedio</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <h3>Terminal</h3>
+                        <p>Línea de comandos para desarrollo</p>
+                        <div class="skill-level">
+                            <span class="level-badge intermediate">Intermedio</span>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <h3>HTML5</h3>
-                    <p>Estructura semántica y accesible para aplicaciones web</p>
-                    <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90%"></div>
+            <!-- Languages Section -->
+            <div class="skills-category">
+                <h3 class="category-title">
+                    <i class="fas fa-code-branch"></i>
+                    Lenguajes & Frameworks
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square"></i>
                         </div>
-                        <span>Avanzado</span>
+                        <h3>JavaScript</h3>
+                        <p>Lenguaje de programación fundamental para desarrollo web</p>
+                        <div class="skill-level">
+                            <span class="level-badge learning">Aprendizaje</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <h3>CSS3</h3>
-                    <p>Estilos modernos y responsivos con animaciones avanzadas</p>
-                    <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="80%"></div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
                         </div>
-                        <span>Intermedio</span>
+                        <h3>React</h3>
+                        <p>Biblioteca de JavaScript para interfaces de usuario</p>
+                        <div class="skill-level">
+                            <span class="level-badge learning">Aprendizaje</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <h3>React</h3>
-                    <p>Biblioteca de JavaScript para construir interfaces de usuario</p>
-                    <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="75%"></div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
                         </div>
-                        <span>Intermedio</span>
+                        <h3>HTML5</h3>
+                        <p>Estructura semántica para aplicaciones web</p>
+                        <div class="skill-level">
+                            <span class="level-badge learning">Aprendizaje</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-android"></i>
-                    </div>
-                    <h3>Kotlin</h3>
-                    <p>Desarrollo de aplicaciones móviles para Android</p>
-                    <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="70%"></div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
                         </div>
-                        <span>Básico</span>
+                        <h3>CSS3</h3>
+                        <p>Estilos modernos y responsivos con animaciones</p>
+                        <div class="skill-level">
+                            <span class="level-badge learning">Aprendizaje</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>VS Code</h3>
-                    <p>Editor de código preferido para desarrollo eficiente</p>
-                    <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="95%"></div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-android"></i>
                         </div>
-                        <span>Experto</span>
+                        <h3>Kotlin</h3>
+                        <p>Desarrollo de aplicaciones móviles para Android</p>
+                        <div class="skill-level">
+                            <span class="level-badge learning">Aprendizaje</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-swift"></i>
+                        </div>
+                        <h3>Swift</h3>
+                        <p>Desarrollo de aplicaciones para iOS</p>
+                        <div class="skill-level">
+                            <span class="level-badge learning">Aprendizaje</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Kotlin UI</h3>
+                        <p>Interfaces de usuario con Kotlin</p>
+                        <div class="skill-level">
+                            <span class="level-badge learning">Aprendizaje</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <h3>Node.js</h3>
+                        <p>JavaScript del lado del servidor</p>
+                        <div class="skill-level">
+                            <span class="level-badge learning">Aprendizaje</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -335,7 +389,7 @@
                         </div>
                         <div class="contact-details">
                             <h3>Email</h3>
-                            <p>tu-email@ejemplo.com</p>
+                            <a href="mailto:kryydev@gmail.com" class="contact-link">kryydev@gmail.com</a>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -344,7 +398,7 @@
                         </div>
                         <div class="contact-details">
                             <h3>LinkedIn</h3>
-                            <p>linkedin.com/in/tu-perfil</p>
+                            <a href="https://linkedin.com/in/daniel-dos-santos" target="_blank" class="contact-link">linkedin.com/in/daniel-dos-santos</a>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -353,23 +407,9 @@
                         </div>
                         <div class="contact-details">
                             <h3>GitHub</h3>
-                            <p>github.com/tu-usuario</p>
+                            <a href="https://github.com/Krycoow" target="_blank" class="contact-link">github.com/Krycoow</a>
                         </div>
                     </div>
-                </div>
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="Tu nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Tu email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Tu mensaje" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-                    </form>
                 </div>
             </div>
         </div>
@@ -381,9 +421,6 @@
             <div class="footer-content">
                 <p>&copy; 2024 Daniel Dos Santos. Todos los derechos reservados.</p>
                 <div class="footer-links">
-                    <a href="admin.html" class="admin-link" title="Panel de Administración">
-                        <i class="fas fa-cog"></i>
-                    </a>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-github"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
@@ -397,3 +434,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
