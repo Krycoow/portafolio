@@ -193,6 +193,170 @@ const initButtonRipples = () => {
     });
 };
 
+// Translation System
+const translations = {
+    es: {
+        'meta.title': 'Mi Portafolio - Desarrollador Frontend',
+        'hero.eyebrow': 'Frontend • UI Experimenter',
+        'hero.greeting': 'Hola, soy',
+        'hero.subtitle': 'Desarrollador Frontend apasionado por crear experiencias digitales inmersivas. Con 19 años y varios meses de experiencia estudiando programación, me especializo en interfaces modernas con JavaScript, HTML, CSS y React. Busco transformar ideas en productos web brutalistas, vivos y tridimensionales que eleven la experiencia de usuario.',
+        'hero.specialties.label': 'Especialidades',
+        'hero.specialties.value': 'React • UI • Animaciones',
+        'hero.experience.label': 'Experiencia',
+        'hero.experience.value': '6+ meses build mode',
+        'hero.viewProjects': 'Ver proyectos',
+        'hero.contact': 'Contactar',
+        'hero.profile.title': 'Desarrollador Frontend • 19 años',
+        'hero.profile.tag': 'Microinteracciones',
+        'about.title': 'Sobre mí',
+        'about.subtitle': 'Conoce un poco más sobre mi trayectoria',
+        'about.description1': 'Soy un desarrollador frontend de 19 años con varios meses de experiencia estudiando programación. Mi pasión por la tecnología me ha llevado a especializarme en el desarrollo de interfaces de usuario modernas y funcionales.',
+        'about.description2': 'Me enfoco en crear soluciones web que no solo se vean bien, sino que también ofrezcan una experiencia de usuario excepcional. Mi objetivo es seguir creciendo como desarrollador y contribuir a proyectos innovadores.',
+        'about.stat.years': 'Años',
+        'about.stat.months': 'Meses estudiando',
+        'about.stat.technologies': 'Tecnologías',
+        'projects.title': 'Proyectos',
+        'projects.subtitle': 'Algunos de mis trabajos destacados',
+        'projects.zion.description': 'Agencia de Marketing Digital desarrollada con tecnologías web modernas. Proyecto completo que incluye diseño responsivo, animaciones CSS avanzadas, formularios de contacto funcionales y optimización para motores de búsqueda. Desarrollado colaborativamente con enfoque en UX/UI profesional.',
+        'projects.zion.feature1': 'Diseño responsivo',
+        'projects.zion.feature2': 'Formularios funcionales',
+        'projects.zion.feature3': 'Animaciones CSS',
+        'projects.zion.feature4': 'UX/UI profesional',
+        'projects.zion.feature5': 'Desarrollo colaborativo',
+        'projects.zion.feature6': 'Control de versiones Git',
+        'projects.geez.description': 'Experiencia web inmersiva para una agencia cultural europea. Integré un mapa 3D interactivo, animaciones controladas por scroll y consumo de datos en tiempo real para eventos y artistas.',
+        'projects.geez.feature1': 'Parallax y cámaras 3D',
+        'projects.geez.feature2': 'Dark mode brutalista',
+        'projects.geez.feature3': 'Integración con APIs culturales',
+        'projects.geez.feature4': 'Optimización de performance',
+        'projects.amen.description': 'Plataforma de transmisiones y mentoring para creadores. Construí dashboards 3D, sistema de membresías y automatización de emails personalizados para cada comunidad.',
+        'projects.amen.feature1': 'Paneles 3D en tiempo real',
+        'projects.amen.feature2': 'Autenticación y roles',
+        'projects.amen.feature3': 'Automatización con Supabase',
+        'projects.amen.feature4': 'Integración con Stripe',
+        'projects.comingSoon.title': 'Próximamente',
+        'projects.comingSoon.subtitle': 'Más proyectos en desarrollo',
+        'projects.new.title': 'Nuevos Proyectos',
+        'projects.new.description': 'Actualmente trabajando en nuevos proyectos que incluirán React, aplicaciones web más complejas y proyectos de desarrollo móvil.',
+        'projects.new.feature1': 'En desarrollo',
+        'projects.new.feature2': 'React + Node.js',
+        'projects.new.feature3': 'Aplicaciones móviles',
+        'projects.viewProject': 'Ver Proyecto',
+        'projects.code': 'Código',
+        'skills.title': 'Habilidades',
+        'skills.subtitle': 'Herramientas y lenguajes que utilizo',
+        'skills.tools.title': 'Herramientas',
+        'skills.languages.title': 'Lenguajes & Frameworks',
+        'contact.title': 'Contacto',
+        'contact.subtitle': '¿Tienes un proyecto en mente? ¡Hablemos!',
+        'footer.rights': 'Todos los derechos reservados.'
+    },
+    en: {
+        'meta.title': 'My Portfolio - Frontend Developer',
+        'hero.eyebrow': 'Frontend • UI Experimenter',
+        'hero.greeting': 'Hello, I\'m',
+        'hero.subtitle': 'Frontend Developer passionate about creating immersive digital experiences. At 19 years old with several months of experience studying programming, I specialize in modern interfaces with JavaScript, HTML, CSS and React. I seek to transform ideas into brutalist, vibrant and three-dimensional web products that elevate the user experience.',
+        'hero.specialties.label': 'Specialties',
+        'hero.specialties.value': 'React • UI • Animations',
+        'hero.experience.label': 'Experience',
+        'hero.experience.value': '6+ months build mode',
+        'hero.viewProjects': 'View projects',
+        'hero.contact': 'Contact',
+        'hero.profile.title': 'Frontend Developer • 19 years old',
+        'hero.profile.tag': 'Microinteractions',
+        'about.title': 'About me',
+        'about.subtitle': 'Learn a bit more about my journey',
+        'about.description1': 'I am a 19-year-old frontend developer with several months of experience studying programming. My passion for technology has led me to specialize in developing modern and functional user interfaces.',
+        'about.description2': 'I focus on creating web solutions that not only look good, but also offer an exceptional user experience. My goal is to continue growing as a developer and contribute to innovative projects.',
+        'about.stat.years': 'Years',
+        'about.stat.months': 'Months studying',
+        'about.stat.technologies': 'Technologies',
+        'projects.title': 'Projects',
+        'projects.subtitle': 'Some of my featured work',
+        'projects.zion.description': 'Digital Marketing Agency developed with modern web technologies. Complete project that includes responsive design, advanced CSS animations, functional contact forms and search engine optimization. Collaboratively developed with a focus on professional UX/UI.',
+        'projects.zion.feature1': 'Responsive design',
+        'projects.zion.feature2': 'Functional forms',
+        'projects.zion.feature3': 'CSS animations',
+        'projects.zion.feature4': 'Professional UX/UI',
+        'projects.zion.feature5': 'Collaborative development',
+        'projects.zion.feature6': 'Git version control',
+        'projects.geez.description': 'Immersive web experience for a European cultural agency. I integrated an interactive 3D map, scroll-controlled animations and real-time data consumption for events and artists.',
+        'projects.geez.feature1': 'Parallax and 3D cameras',
+        'projects.geez.feature2': 'Brutalist dark mode',
+        'projects.geez.feature3': 'Integration with cultural APIs',
+        'projects.geez.feature4': 'Performance optimization',
+        'projects.amen.description': 'Streaming and mentoring platform for creators. I built 3D dashboards, membership system and personalized email automation for each community.',
+        'projects.amen.feature1': 'Real-time 3D panels',
+        'projects.amen.feature2': 'Authentication and roles',
+        'projects.amen.feature3': 'Supabase automation',
+        'projects.amen.feature4': 'Stripe integration',
+        'projects.comingSoon.title': 'Coming soon',
+        'projects.comingSoon.subtitle': 'More projects in development',
+        'projects.new.title': 'New Projects',
+        'projects.new.description': 'Currently working on new projects that will include React, more complex web applications and mobile development projects.',
+        'projects.new.feature1': 'In development',
+        'projects.new.feature2': 'React + Node.js',
+        'projects.new.feature3': 'Mobile applications',
+        'projects.viewProject': 'View Project',
+        'projects.code': 'Code',
+        'skills.title': 'Skills',
+        'skills.subtitle': 'Tools and languages I use',
+        'skills.tools.title': 'Tools',
+        'skills.languages.title': 'Languages & Frameworks',
+        'contact.title': 'Contact',
+        'contact.subtitle': 'Have a project in mind? Let\'s talk!',
+        'footer.rights': 'All rights reserved.'
+    }
+};
+
+// Get current language from localStorage or default to Spanish
+let currentLang = localStorage.getItem('language') || 'es';
+
+// Function to translate the page
+const translatePage = (lang) => {
+    currentLang = lang;
+    localStorage.setItem('language', lang);
+    
+    // Update HTML lang attribute
+    document.documentElement.lang = lang;
+    document.getElementById('html-lang').lang = lang;
+    
+    // Update title
+    document.title = translations[lang]['meta.title'];
+    
+    // Translate all elements with data-i18n attribute
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+            element.textContent = translations[lang][key];
+        }
+    });
+    
+    // Update active language button
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        if (btn.dataset.lang === lang) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+};
+
+// Initialize language selector
+const initLanguageSelector = () => {
+    const langButtons = document.querySelectorAll('.lang-btn');
+    
+    langButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const lang = btn.dataset.lang;
+            translatePage(lang);
+        });
+    });
+    
+    // Set initial language
+    translatePage(currentLang);
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     addStaggeredAnimations();
     animateOnScroll();
@@ -201,6 +365,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initHeroParallax();
     initButtonRipples();
     parallaxEffect();
+    initLanguageSelector();
 
     let ticking = false;
     window.addEventListener('scroll', () => {
